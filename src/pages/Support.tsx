@@ -53,13 +53,13 @@ export default function Support() {
           </div>
           
           <div className="flex items-center justify-center space-x-6 mt-8">
-            <a href="https://t.me/HackerHouseBLR" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
+            <a href="https://t.me/HackerHouseBLR" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-[var(--color-m3-on-surface-variant)] hover:text-[var(--color-m3-primary)] transition-colors">
               <Send className="w-5 h-5" />
-              <span>Telegram</span>
+              <span>t.me/HackerHouseBLR</span>
             </a>
-            <a href="https://x.com/HackerHouseBLR" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
+            <a href="https://x.com/HackerHouseBLR" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-[var(--color-m3-on-surface-variant)] hover:text-[var(--color-m3-primary)] transition-colors">
               <Twitter className="w-5 h-5" />
-              <span>Twitter</span>
+              <span>x.com/HackerHouseBLR</span>
             </a>
           </div>
         </FadeIn>

@@ -1,9 +1,11 @@
 import { ArrowRight, Users, Github, Send, Twitter, Youtube, Globe, Code2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import { projects } from '../data/projects';
 
 export default function Projects() {
+  const navigate = useNavigate();
+
   return (
     <div className="pt-32 pb-20 min-h-screen relative">
       <div className="absolute inset-0 grid-pattern opacity-30"></div>
@@ -17,7 +19,10 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-6">
           {projects.slice(0, 4).map((project, index) => (
             <FadeIn key={project.id} delay={index * 0.1}>
-              <Link to={`/projects/${project.id}`} className="block m3-card-elevated p-8 hover-glow group h-full">
+              <div 
+                onClick={() => navigate(`/projects/${project.id}`)} 
+                className="block m3-card-elevated p-8 hover-glow group h-full cursor-pointer"
+              >
                 <div className="flex justify-between items-start mb-6">
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.color} flex items-center justify-center m3-headline-small text-white`}>
                     {project.shortName}
@@ -75,7 +80,7 @@ export default function Projects() {
                     </a>
                   )}
                 </div>
-              </Link>
+              </div>
             </FadeIn>
           ))}
         </div>
@@ -83,13 +88,16 @@ export default function Projects() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
           {projects.slice(4).map((project, index) => (
             <FadeIn key={project.id} delay={index * 0.1}>
-              <Link to={`/projects/${project.id}`} className="block m3-card-filled p-6 text-center hover-glow">
+              <div 
+                onClick={() => navigate(`/projects/${project.id}`)} 
+                className="block m3-card-filled p-6 text-center hover-glow cursor-pointer"
+              >
                 <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${project.color} flex items-center justify-center text-white mx-auto mb-3`}>
                   <Code2 className="w-6 h-6" />
                 </div>
                 <h4 className="m3-title-medium text-[var(--color-m3-on-surface)]">{project.name}</h4>
                 <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mt-1">{project.description}</p>
-              </Link>
+              </div>
             </FadeIn>
           ))}
         </div>

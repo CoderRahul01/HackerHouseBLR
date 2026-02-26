@@ -1,9 +1,11 @@
 import { ArrowRight, Monitor, Video, Shirt, Utensils, Heart, Trophy, Gift, Users, Github, Globe, Code2, ShoppingBag, Youtube, Handshake, Building2, Send, Twitter, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import { projects } from '../data/projects';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="antialiased">
       {/* Hero Section */}
@@ -27,8 +29,7 @@ export default function Home() {
           
           <FadeIn delay={0.2}>
             <p className="m3-headline-small text-[var(--color-m3-on-surface-variant)] max-w-3xl mx-auto mb-12">
-              India's premier residential incubator for AI, Web3, and Blockchain enthusiasts. 
-              Where underdogs become legends.
+              3-bed Residential Hacker house for AI, Web3, Blockchain Enthusiasts
             </p>
           </FadeIn>
           
@@ -45,19 +46,19 @@ export default function Home() {
           <FadeIn delay={0.4} className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-1">5-6</div>
-              <div className="text-sm text-gray-500">Residents</div>
+              <div className="text-sm text-gray-500">Residents Capacity</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-1">8</div>
               <div className="text-sm text-gray-500">Workstations</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">₹10K</div>
+              <div className="text-3xl font-bold text-white mb-1">₹10K/mo</div>
               <div className="text-sm text-gray-500">MacBook Grant</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">$35K+</div>
-              <div className="text-sm text-gray-500">Grants Raised</div>
+              <div className="text-3xl font-bold text-white mb-1">100%</div>
+              <div className="text-sm text-gray-500">Paid Access</div>
             </div>
           </FadeIn>
         </div>
@@ -70,29 +71,29 @@ export default function Home() {
             <FadeIn>
               <h2 className="m3-display-medium mb-6">Empowering the <br /><span className="gradient-text">Underdogs</span></h2>
               <p className="m3-body-large text-[var(--color-m3-on-surface-variant)] mb-6">
-                Hacker House is a 3-bedroom residential incubator in Bangalore designed for Indian students and developers passionate about AI, Web3, and Blockchain. We provide not just a place to stay, but a launchpad for your ambitions.
+                Who can apply: Indian Students & Developers interested in AI/Web3/Crypto.
               </p>
               <p className="m3-body-large text-[var(--color-m3-on-surface-variant)] mb-8">
-                Our vision is to become a world-class incubation center for Indian students interested in software development and content creation. We believe in the power of community, collaboration, and relentless building.
+                Application Process: Website Apply → Waiting List → Selection updated in the "hacker house" telegram channel.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-primary-container)] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-primary-container)] flex items-center justify-center flex-shrink-0">
                     <Globe className="w-6 h-6 text-[var(--color-m3-on-primary-container)]" />
                   </div>
                   <div>
                     <h4 className="m3-title-medium mb-1">Vision</h4>
-                    <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">World-class incubation center for Indian builders and creators</p>
+                    <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">To become a world-class incubation center for Indian students interested in software development & content creation.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-secondary-container)] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-secondary-container)] flex items-center justify-center flex-shrink-0">
                     <Code2 className="w-6 h-6 text-[var(--color-m3-on-secondary-container)]" />
                   </div>
                   <div>
                     <h4 className="m3-title-medium mb-1">Mission</h4>
-                    <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">To empower the underdogs and turn ideas into reality</p>
+                    <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">To empower the underdogs.</p>
                   </div>
                 </div>
               </div>
@@ -111,28 +112,28 @@ export default function Home() {
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center text-white font-bold">A</div>
                     <div>
                       <h4 className="m3-title-medium">Arjun</h4>
-                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Strategy & Growth</p>
+                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Advisor</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4 p-4 rounded-xl hover:bg-[var(--color-m3-surface-container-highest)] transition-colors cursor-pointer">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center text-white font-bold">S</div>
                     <div>
                       <h4 className="m3-title-medium">Suraj</h4>
-                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Technical Advisor</p>
+                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Advisor</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4 p-4 rounded-xl hover:bg-[var(--color-m3-surface-container-highest)] transition-colors cursor-pointer">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold">K</div>
                     <div>
                       <h4 className="m3-title-medium">Karnika</h4>
-                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Community & Ops</p>
+                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Advisor</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4 p-4 rounded-xl hover:bg-[var(--color-m3-surface-container-highest)] transition-colors cursor-pointer">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white font-bold">M</div>
                     <div>
                       <h4 className="m3-title-medium">Mr. Key</h4>
-                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Investor Relations</p>
+                      <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)]">Advisor</p>
                     </div>
                   </div>
                 </div>
@@ -152,73 +153,51 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FadeIn className="m3-card-filled p-6 hover-glow">
-              <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-primary-container)] flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-primary-container)] flex items-center justify-center mb-4">
                 <Monitor className="w-6 h-6 text-[var(--color-m3-on-primary-container)]" />
               </div>
               <h3 className="m3-title-large mb-2">Work Setup</h3>
-              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">8 dedicated workstations with high-speed fiber internet and ergonomic setup</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">8 Stations</span>
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">1Gbps WiFi</span>
-              </div>
+              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">8 Workstations, high-speed internet</p>
             </FadeIn>
             
             <FadeIn delay={0.1} className="m3-card-filled p-6 hover-glow">
-              <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-secondary-container)] flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-secondary-container)] flex items-center justify-center mb-4">
                 <Video className="w-6 h-6 text-[var(--color-m3-on-secondary-container)]" />
               </div>
               <h3 className="m3-title-large mb-2">Recording Studio</h3>
-              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Professional content creation setup with teleprompter, Godox lights, and 10ft greenscreen</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">Teleprompter</span>
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">DJI Mic</span>
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">GoPro</span>
-              </div>
+              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Teleprompter, Godox Lights, Professional 10-feet Greenscreen, Hoodie Printing Machine, DJI mic, GoPro and more</p>
             </FadeIn>
             
             <FadeIn delay={0.2} className="m3-card-filled p-6 hover-glow">
-              <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-primary-container)] flex items-center justify-center mb-4">
-                <Shirt className="w-6 h-6 text-[var(--color-m3-on-primary-container)]" />
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-primary-container)] flex items-center justify-center mb-4">
+                <Utensils className="w-6 h-6 text-[var(--color-m3-on-primary-container)]" />
               </div>
-              <h3 className="m3-title-large mb-2">Merch Lab</h3>
-              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">In-house hoodie printing machine for your startup merch and team apparel</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">DTG Printing</span>
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">Custom Merch</span>
-              </div>
+              <h3 className="m3-title-large mb-2">Full Kitchen</h3>
+              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Full Furnished Kitchen, Super Market Place</p>
             </FadeIn>
             
             <FadeIn className="m3-card-filled p-6 hover-glow">
-              <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-secondary-container)] flex items-center justify-center mb-4">
-                <Utensils className="w-6 h-6 text-[var(--color-m3-on-secondary-container)]" />
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-secondary-container)] flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-[var(--color-m3-on-secondary-container)]" />
               </div>
-              <h3 className="m3-title-large mb-2">Full Kitchen</h3>
-              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Fully furnished kitchen with modern appliances and cooking essentials</p>
+              <h3 className="m3-title-large mb-2">Wellness Center</h3>
+              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Pool, Gym, Spa, Steam & Sauna</p>
             </FadeIn>
             
             <FadeIn delay={0.1} className="m3-card-filled p-6 hover-glow">
-              <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-primary-container)] flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-[var(--color-m3-on-primary-container)]" />
-              </div>
-              <h3 className="m3-title-large mb-2">Wellness Center</h3>
-              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Pool, Gym, Spa, Steam & Sauna for work-life balance and rejuvenation</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">Pool</span>
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">Gym</span>
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">Spa</span>
-              </div>
-            </FadeIn>
-            
-            <FadeIn delay={0.2} className="m3-card-filled p-6 hover-glow">
-              <div className="w-12 h-12 rounded-lg bg-[var(--color-m3-secondary-container)] flex items-center justify-center mb-4">
-                <Trophy className="w-6 h-6 text-[var(--color-m3-on-secondary-container)]" />
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-primary-container)] flex items-center justify-center mb-4">
+                <Trophy className="w-6 h-6 text-[var(--color-m3-on-primary-container)]" />
               </div>
               <h3 className="m3-title-large mb-2">Sports Facilities</h3>
-              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Basketball turf, Cricket turf, and jogging area for active breaks</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">Basketball</span>
-                <span className="m3-chip border-none bg-[var(--color-m3-surface-container-highest)]">Cricket</span>
+              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Jogging Area, Basketball Turf, Cricket Turf.</p>
+            </FadeIn>
+
+            <FadeIn delay={0.2} className="m3-card-filled p-6 hover-glow">
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-m3-secondary-container)] flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-[var(--color-m3-on-secondary-container)]" />
               </div>
+              <h3 className="m3-title-large mb-2">Community</h3>
+              <p className="m3-body-medium text-[var(--color-m3-on-surface-variant)] mb-4">Resident Alumni: Team members of past and ongoing projects. Guests Lists: Everyone who’s visited hackerhouse</p>
             </FadeIn>
           </div>
           
@@ -229,8 +208,8 @@ export default function Home() {
                   <Gift className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="m3-headline-small">Resident Benefits</h3>
-                  <p className="m3-body-large text-[var(--color-m3-on-surface-variant)]">All-paid quarterly access + Tool subscriptions + ₹10,000/mo MacBook Air fund</p>
+                  <h3 className="m3-headline-small">Benefits for Accepted Applicants</h3>
+                  <p className="m3-body-large text-[var(--color-m3-on-surface-variant)]">All-paid Quarterly Access to HH, subscription to any tools required, and Rs. 10,000/mo for a new macbook air.</p>
                 </div>
               </div>
               <Link to="/apply" className="m3-button-filled h-12 px-8">
@@ -258,7 +237,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             {projects.slice(0, 4).map((project, index) => (
               <FadeIn key={project.id} delay={index * 0.1}>
-                <Link to={`/projects/${project.id}`} className="block project-card rounded-2xl p-8 hover-glow group h-full">
+                <div 
+                  onClick={() => navigate(`/projects/${project.id}`)} 
+                  className="block project-card rounded-2xl p-8 hover-glow group h-full cursor-pointer"
+                >
                   <div className="flex justify-between items-start mb-6">
                     <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.color} flex items-center justify-center text-2xl font-bold text-white`}>
                       {project.shortName}
@@ -316,7 +298,7 @@ export default function Home() {
                       </a>
                     )}
                   </div>
-                </Link>
+                </div>
               </FadeIn>
             ))}
           </div>
@@ -324,13 +306,16 @@ export default function Home() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             {projects.slice(4).map((project, index) => (
               <FadeIn key={project.id} delay={index * 0.1}>
-                <Link to={`/projects/${project.id}`} className="block glass-card rounded-xl p-6 text-center hover-glow">
+                <div 
+                  onClick={() => navigate(`/projects/${project.id}`)} 
+                  className="block glass-card rounded-xl p-6 text-center hover-glow cursor-pointer"
+                >
                   <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${project.color} flex items-center justify-center text-white mx-auto mb-3`}>
                     <Code2 className="w-6 h-6" />
                   </div>
                   <h4 className="font-semibold text-white">{project.name}</h4>
                   <p className="text-sm text-gray-400 mt-1">{project.description}</p>
-                </Link>
+                </div>
               </FadeIn>
             ))}
           </div>

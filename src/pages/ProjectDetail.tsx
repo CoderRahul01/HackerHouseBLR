@@ -99,9 +99,9 @@ export default function ProjectDetail() {
             <span>Back to Projects</span>
           </Link>
 
-          <div className="flex items-center space-x-6 mb-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-6 mb-8">
             <div
-              className={`w-24 h-24 rounded-[24px] bg-gradient-to-br ${project.color} flex items-center justify-center m3-display-small text-white shadow-lg`}
+              className={`w-20 h-20 sm:w-24 sm:h-24 rounded-[24px] sm:rounded-[28px] bg-gradient-to-br ${project.color} flex items-center justify-center m3-display-small text-white m3-elevation-3 shrink-0`}
             >
               {project.shortName}
             </div>
@@ -182,6 +182,28 @@ export default function ProjectDetail() {
               >
                 <Youtube className="w-4 h-4" />
                 <span>YouTube</span>
+              </a>
+            )}
+            {project.links.openhouse2024 && (
+              <a
+                href={project.links.openhouse2024}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m3-button-tonal with-icon"
+              >
+                <Youtube className="w-4 h-4" />
+                <span>2024 Videos</span>
+              </a>
+            )}
+            {project.links.techStackDetails && (
+              <a
+                href={project.links.techStackDetails}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m3-button-tonal with-icon"
+              >
+                <Code2 className="w-4 h-4" />
+                <span>Tech Details</span>
               </a>
             )}
           </div>

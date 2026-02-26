@@ -16,6 +16,8 @@ export interface Project {
     twitter?: string;
     youtube?: string;
     pitchDeck?: string;
+    techStackDetails?: string;
+    openhouse2024?: string;
   };
   team?: string[];
   color: string;
@@ -77,7 +79,8 @@ export const projects: Project[] = [
     },
     links: {
       website: 'www.openhouse.ink',
-      youtube: 'https://www.youtube.com/watch?v=u8qElwW8I7U&list=PLwaTleaX31WnjblcJtWbQ4JBCqfGQ1quU&index=7'
+      youtube: 'https://www.youtube.com/watch?v=u8qElwW8I7U&list=PLwaTleaX31WnjblcJtWbQ4JBCqfGQ1quU&index=7',
+      openhouse2024: 'https://www.youtube.com/watch?v=3d-Dwkbf7ZI&list=PLwaTleaX31WnjblcJtWbQ4JBCqfGQ1quU'
     },
     color: 'from-pink-500 to-rose-500',
     shortName: 'OH'
@@ -96,7 +99,8 @@ export const projects: Project[] = [
     links: {
       website: 'www.esgai.space',
       github: 'https://github.com/AdityasArsenal/deploy-dana',
-      pitchDeck: 'https://bit.ly/pitch-deck-esgai'
+      pitchDeck: 'https://bit.ly/pitch-deck-esgai',
+      techStackDetails: 'https://docs.google.com/document/d/14EzWVCIucXFCYU0Oc3thTGfzUUX4379urMLQlhrc8hY/edit?tab=t.0'
     },
     color: 'from-green-500 to-emerald-500',
     shortName: 'ES'
